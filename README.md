@@ -10,9 +10,17 @@ Schreibe ein Programm, dass ähnlich zu dem Programm aus Aufgabe 1 einige Daten 
 * Wie ist dein Nachname?
 * Wie alt bist du?
 * Bist du verheiratet? (J/N)
-* Wann bist du geboren? 
+* Wie groß bist du in Metern? 
+
+Um von der Konsole Benuzter Eingaben zu lesen verwendest du am besten den [Scanner](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html): 
+```
+Scanner scanner = new Scanner(System.in);
+String text = scanner.nextLine(); // returniert den eingegebenen Text als String, mit Enter wird der Text gesendet
+```
 
 Bonus: Lass Vor- und Nachnamen in einer Zeile mit einem Leerzeichen getrennt eingeben aber speichere sie getrennt in zwei Variablen ab.
+
+Bonus 2: Frag nach dem Geburtsdatum. Da der Scanner keine `nextDate()` Funktion hast wirst du etwas brauchen um ein Datum aus dem String zu parsen. Sieh dir dafür die [offizielle SimpleDateFormat Dokumentation](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html) an.
 
 ------------------------------------------------------------------------
 
@@ -28,7 +36,14 @@ Write a program similar to our first exercise to read data via console input fro
 * What is your last name?
 * How old are you?
 * Are you married? (Y/N)
-* When were you born? 
+* What's your size in meters? 
 
-Bonus: Let the user enter their first and lastname together but save them in two variables.
+To read user input from the console you probably want to use the [Scanner class](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html): 
+```
+Scanner scanner = new Scanner(System.in);
+String text = scanner.nextLine(); // returns the entered text as a String, text is submitted when a new line is entered
+```
 
+Bonus: Provide first and last name in one line but save them in two seperate variables.
+
+Bonus 2: Ask for the users date of birth. As the scanner does not provide a `nextDate()` function you will have to parse a date from the String. Take a look at the [official documentation of SimpleDateFormat](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html) an.
