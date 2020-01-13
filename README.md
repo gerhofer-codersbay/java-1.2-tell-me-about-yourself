@@ -9,7 +9,7 @@ Schreibe ein Programm, dass ähnlich zu dem Programm aus Aufgabe 1 einige Daten 
 * Wie ist dein Vorname?
 * Wie ist dein Nachname?
 * Wie alt bist du?
-* Bist du verheiratet? (J/N)
+* Bist du verheiratet? (true/false)
 * Wie groß bist du in Metern? 
 
 Um von der Konsole Benuzter Eingaben zu lesen verwendest du am besten den [Scanner](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html): 
@@ -35,7 +35,7 @@ Write a program similar to our first exercise to read data via console input fro
 * What is your first name?
 * What is your last name?
 * How old are you?
-* Are you married? (Y/N)
+* Are you married? (true/false)
 * What's your size in meters? 
 
 To read user input from the console you probably want to use the [Scanner class](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html): 
